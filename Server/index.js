@@ -31,5 +31,9 @@ app.get("/style",(req,res)=>{
 	res.sendFile(path.join(__dirname, '/HTML/css/style.css'));
 });
 
+app.get("/script",(req,res)=>{
+	res.sendFile(path.join(__dirname, '/HTML/js/password.js'));
+});
+
 app.listen(port);
 console.log('Server started at http://localhost:' + port);

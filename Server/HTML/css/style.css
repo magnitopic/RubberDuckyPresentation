@@ -7,13 +7,13 @@ body{
 }
 
 #main{
-	margin-top: 30px;
+	margin-top: 50px;
 	border: 1px solid #dadce0;
 	border-radius: 8px;
 	color: #202124;
 	height: 400px;
 	width: 350px;
-	padding: 100px;
+	padding: 50px;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -23,10 +23,35 @@ body{
 	font-size: 1.7em;
 }
 
-#email{
+.input{
+	margin-bottom: 25px;
 	padding: 13px;
 	font-size: 16px;
 	border: 1px solid #dadce0;
 	border-radius: 4px;
-	width: 300px;
+	width: 100%;
+}
+
+#inputs{
+	width: 100%;
+	display: flex;
+	justify-content: start;
+	flex-direction: column;
+}
+
+#submitButton{
+	border: 1px solid #dadce0;
+	border-radius: 4px;
+	background-color: #1A73E8;
+	color: #fff;
+	height: 48px;
+	width: 109px;
+	font-size: .875rem;
+	cursor: pointer;
+}
+
+#buttonDiv{
+	width: 100%;
+	display: flex;
+	justify-content: end;
 }
