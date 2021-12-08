@@ -23,7 +23,7 @@ mongoose
 
 //Get request for main page
 app.get("/", (req, res) => {
-	res.sendFile(path.join(__dirname, "/HTML/index.html"));
+	res.sendFile(path.join(__dirname, "/web/index.html"));
 });
 
 //Post request for main page
@@ -50,15 +50,19 @@ app.post("/", (req, res) => {
 //Files
 
 app.get("/favicon", (req, res) => {
-	res.sendFile(path.join(__dirname, "/HTML/images/googleIcon.png"));
+	res.sendFile(path.join(__dirname, "/web/images/googleIcon.png"));
 });
 
 app.get("/style", (req, res) => {
-	res.sendFile(path.join(__dirname, "/HTML/css/style.css"));
+	res.sendFile(path.join(__dirname, "/web/css/style.css"));
 });
 
 app.get("/script", (req, res) => {
-	res.sendFile(path.join(__dirname, "/HTML/js/password.js"));
+	res.sendFile(path.join(__dirname, "/web/js/password.js"));
+});
+
+app.get("/logo", (req, res) => {
+	res.sendFile(path.join(__dirname, "/web/images/logo.svg"));
 });
 
 app.listen(port);
