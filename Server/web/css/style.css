@@ -55,3 +55,10 @@ body {
 	display: flex;
 	justify-content: end;
 }
+
+#checkbox {
+	display: flex;
+	color: #202124;
+	font-size: 14px;
+	align-items: center;
+}
