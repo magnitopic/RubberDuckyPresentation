@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const schema= mongoose.Schema;
 
 const gmailSchema = new mongoose.Schema({
-    user: {
+    email: {
         type: String,
         required: true
     },

