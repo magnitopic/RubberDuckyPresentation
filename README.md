@@ -6,7 +6,7 @@ Proyect with an intent on making
 
 I am using the DigiSpark rubber ducky.
 
-![rubberDucky](rubberducky.png)
+![rubberDucky](./rubberDucky.png)
 
 # Software
 
