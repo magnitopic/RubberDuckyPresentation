@@ -44,7 +44,7 @@ app.post("/", (req, res) => {
 		.catch((err) => {
 			console.log(err);
 		});
-	res.redirect("http://172.217.168.174");
+	res.redirect("http://google.com");
 });
 
 //Files
