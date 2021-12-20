@@ -9,7 +9,7 @@ DELAY 8000
 ALT F4
 GUI r
 DELAY 300
-STRING C:/Users/mag/Documents/hackerjuegos.pptx
+STRING %USERPROFILE%/Documents/hackerjuegos.pptx
 DELAY 200
 ENTER
 DELAY 5000
