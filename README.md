@@ -1,10 +1,16 @@
 # RubberDuckyPresentation
 
-Proyect with an intent on making
+School project which showcases what is a Rubber Ducky and what can be done with it.
+
+For the project presentation at school, we wanted to showcase two different uses for the Rubber Ducky, firs was the _Intro.py_ script, which opened a YouTube window with _Never Going To Give You Up_ by Rick Astley, 8 seconds later closed it and opened the PowerPoint presentation we had prepared. We wanted to show the fun and harmless ways the technology could be used.
+
+After the presentation, we changed the script, live for our classmates to see to _DNSpoisoning.py_, we then plugged in the Rubber Ducky to a virtual machine.
+
+The script adds a line of text to the hosts file in `C:/Windows/System32/drivers/etc/hosts`, this file resolves domain names before asking your DNS server, and we added a line that made typing google.com or www.google.com resolve to a different IP, it was our own server running the NodeJS web server. Witch meant that when you went to the domain, you'd see the fake Google login form we made.
 
 ## Hardware
 
-I am using the DigiSpark rubber ducky.
+I am using the DigiSpark Rubber Ducky.
 
 ![rubberDucky](./rubberDucky.png)
 
@@ -52,11 +58,11 @@ Now onto _Tools &#8594; Board &#8594; Boards Manager_. Look for and install `dig
 
 We should have everything we need installed now. I case things don't work as intended you can install the drivers from these links:
 
-[Windows(1.57MB)](https://drive.google.com/file/d/1trMhivBkRLfLepX1MOgFbzdDISkm_lRC/view?usp=sharing)
+[Windows(1.57MB)](https://github.com/magnitopic/RubberDuckyPresentation/raw/master/Drivers/DigisparkDrivers_2.0a4.zip)
 
 SHA256 CheckSum: 14F575FFBAF2E9BA6BA05B75426E90D7010E4650E1E27AACC2EF3F688AA4066E
 
-[MacOS(162MB)](https://drive.google.com/file/d/1jSCyE4HMdNh-onag71Ol8xjYDYEx1-rp/view?usp=sharing)
+[MacOS(162MB)](https://github.com/magnitopic/RubberDuckyPresentation/raw/master/Drivers/arduino-1.8.13-macosx.zip)
 
 SHA256 CheckSum: 84BE3FC0BE0C18563CB2B5E53971DA6AA83E20F1DE37E6DEBAE3B55F8B0EDBB3
 
@@ -74,9 +80,11 @@ python3 Duckyspark_translator.py instructions.txt
 
 The terminal should respond with a _Success!_ message.
 
-Afterwards we can open the _digipayload.ino_ file it has created in the python script's folder, run it and folow it's instructions.
+Afterwards we can open the _digipayload.ino_ file it has created in the python script's folder, run it and follow its instructions.
 
-After that your Rubber Ducky is ready to be pluged in.
+After that your Rubber Ducky is ready to be plugged in.
+
+<img src="./commands.png" alt="logIn" width="750"/>
 
 ## Instruction list
 
@@ -88,9 +96,9 @@ GRI r &#8594; Presses windows key along with whatever other keys you want. Ej: W
 
 Fx 11 &#8594; Presses function keys. Ej: F11
 
-REPEAT n &#8594; Repeats the preavious instruction n times
+REPEAT n &#8594; Repeats the previous instruction n times
 
-And here are a list of preaty self explanatory instructions:
+And here is a list of pretty self-explanatory instructions:
 
 ENTER, SHIFT, ALT, CTRL, SPACE, ESC, TAB
 
@@ -103,11 +111,16 @@ You can also combine them, like if I wanted to do _Ctrl+Shift+Enter_ I'd wright 
 There are two instruction files in this proyect:
 
 -   **Intro.txt** &#8594; Just a fun script to begin our presentation, it rickrolls for 9 seconds, closes the browser and opened the presentation.
--   **DNSpoisoning.txt** &#8594;  
-
+-   **DNSpoisoning.txt** &#8594; Main project file, it runs a cmd with administrative privileges witch it uses to insert a new line in the _hosts_ file, which will make typing google.com or www.google.com resolve to a different IP
 
 ## Other payloads
 
 Take a look at [these other payloads.](https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Payloads)
 
 # Web Server
+
+Made with NodeJS and using MongoDB, basic HTML and CSS for the frontend.
+
+The page is made to look like a Google login, it has some notable differences with the original, but it looks convincing enough. Once a user completes the from and submits it, the entered data will be sent and stored in the MongoDB.
+
+<img src="./logIn.jpg" alt="logIn" width="420"/>

