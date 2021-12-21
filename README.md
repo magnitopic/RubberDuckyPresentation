@@ -8,6 +8,8 @@ After the presentation, we changed the script, live for our classmates to see to
 
 The script adds a line of text to the hosts file in `C:/Windows/System32/drivers/etc/hosts`, this file resolves domain names before asking your DNS server, and we added a line that made typing google.com or www.google.com resolve to a different IP, it was our own server running the NodeJS web server. Witch meant that when you went to the domain, you'd see the fake Google login form we made.
 
+Like the one deployed in [this page.](cyberseguridadbrais.herokuapp.com/) (Don't fill in form with real data)
+
 ## Hardware
 
 I am using the DigiSpark Rubber Ducky.
@@ -70,7 +72,7 @@ SHA256 CheckSum: 84BE3FC0BE0C18563CB2B5E53971DA6AA83E20F1DE37E6DEBAE3B55F8B0EDBB
 
 # Rubber Ducky scripts
 
-Arduino code is uploaded to the Rubber Ducky, but since writing that code is complex, we simplify it by writing simple instructions instead. And then use the _Duckyspark_translator.py_ file to create the actual .INO file we'll use.
+Arduino code is uploaded to the Rubber Ducky, but since writing that code is complex, we simplify it by writing simple instructions instead. And then use the _Duckyspark_translator.py_ file to create the actual _.ino_ file we'll use.
 
 Once we have a txt payload file written, we run the following command on out terminal:
 
@@ -82,7 +84,7 @@ The terminal should respond with a _Success!_ message.
 
 Afterwards we can open the _digipayload.ino_ file it has created in the python script's folder, run it and follow its instructions.
 
-After that your Rubber Ducky is ready to be plugged in.
+After that your Rubber Ducky is ready to be used.
 
 <img src="./commands.png" alt="logIn" width="750"/>
 
