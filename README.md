@@ -14,7 +14,7 @@ Like the one deployed in [this page.](cyberseguridadbrais.herokuapp.com/) (Don't
 
 I am using the DigiSpark Rubber Ducky.
 
-![rubberDucky](./rubberDucky.png)
+![rubberDucky](./Pictures/rubberDucky.png)
 
 # Drivers and installs
 
@@ -86,7 +86,7 @@ Afterwards we can open the _digipayload.ino_ file it has created in the python s
 
 After that your Rubber Ducky is ready to be used.
 
-<img src="./commands.png" alt="logIn" width="750"/>
+<img src="./Pictures/commands.png" alt="logIn" width="750"/>
 
 ## Instruction list
 
@@ -125,4 +125,4 @@ Made with NodeJS and using MongoDB, basic HTML and CSS for the frontend.
 
 The page is made to look like a Google login, it has some notable differences with the original, but it looks convincing enough. Once a user completes the from and submits it, the entered data will be sent and stored in the MongoDB.
 
-<img src="./logIn.jpg" alt="logIn" width="420"/>
+<img src="./Pictures/logIn.jpg" alt="logIn" width="420"/>
