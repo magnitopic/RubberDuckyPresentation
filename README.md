@@ -8,7 +8,7 @@ After the presentation, we changed the script, live for our classmates to see to
 
 The script adds a line of text to the hosts file in `C:/Windows/System32/drivers/etc/hosts`, this file resolves domain names before asking your DNS server, and we added a line that made typing google.com or www.google.com resolve to a different IP, it was our own server running the NodeJS web server. Witch meant that going to the domain would show the fake Google login form we made.
 
-Like the one deployed in [this page.](cyberseguridadbrais.herokuapp.com/) (Don't fill in form with real data)
+Like the one deployed in [this page.](https://cyberseguridadbrais.herokuapp.com/) (Don't fill in form with real data)
 
 ## Hardware
 
