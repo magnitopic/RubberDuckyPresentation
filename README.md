@@ -125,4 +125,4 @@ Made with NodeJS and using MongoDB, basic HTML and CSS for the frontend.
 
 The page is made to look like a Google login, it has some notable differences with the original, but it looks convincing enough. Once a user completes the from and submits it, the entered data will be sent and stored in the MongoDB.
 
-<img src="./Pictures/logIn.jpg" alt="logIn" width="420"/>
+<img src="./Pictures/logIn.png" alt="logIn" width="420"/>
