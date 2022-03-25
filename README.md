@@ -54,7 +54,7 @@ Other OS and more options in [Arduino's software page](https://www.arduino.cc/en
 http://digistump.com/package_digistump_index.json
 ```
 
-Now onto _Tools &#8594; Board &#8594; Boards Manager_. Look for and install `digistump AVR`
+Now on to _Tools &#8594; Board &#8594; Boards Manager_. Look for and install `digistump AVR`
 
 ## DigiSpark drivers
 
