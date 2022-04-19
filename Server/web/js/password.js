@@ -1,8 +1,8 @@
-function change() {
-	var decider = document.getElementById("switch");
-	if (decider.checked) {
-		document.getElementById("pass").type = "text";
+document.querySelector("#switch").addEventListener("change", (e) => {
+	console.log(e.target.checked);
+	if (e.target.checked) {
+		document.querySelector("#pass").type = "text";
 	} else {
-		document.getElementById("pass").type = "password";
+		document.querySelector("#pass").type = "password";
 	}
-}
+});
