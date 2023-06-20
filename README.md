@@ -36,7 +36,7 @@ sudo apt install python3
 
 You can also go to [the Python download page](https://www.python.org/downloads/)
 
-And **you have to** download [this python script.](https://github.com/toxydose/Duckyspark/blob/master/Duckyspark_translator.py)
+> **You have to download** [this python script.](https://github.com/toxydose/Duckyspark/blob/master/Duckyspark_translator.py)
 
 ## 2. Arduino IDE
 
@@ -68,7 +68,7 @@ SHA256 CheckSum: 14F575FFBAF2E9BA6BA05B75426E90D7010E4650E1E27AACC2EF3F688AA4066
 
 SHA256 CheckSum: 84BE3FC0BE0C18563CB2B5E53971DA6AA83E20F1DE37E6DEBAE3B55F8B0EDBB3
 
-**Note:** I was not able find Linux drivers, it might be simply because Linux does not need them or because they don't exist
+> **Note:** I was not able find Linux drivers, it might be simply because Linux does not need them or because they don't exist
 
 # Rubber Ducky scripts
 
