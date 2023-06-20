@@ -20,7 +20,7 @@ I am using the DigiSpark Rubber Ducky.
 
 Three things:
 
-## Python
+## 1. Python
 
 Install with winget (Windows):
 
@@ -38,7 +38,7 @@ You can also go to [the Python download page](https://www.python.org/downloads/)
 
 And **you have to** download [this python script.](https://github.com/toxydose/Duckyspark/blob/master/Duckyspark_translator.py)
 
-## Arduino IDE
+## 2. Arduino IDE
 
 Install with winget (Windows):
 
@@ -56,7 +56,7 @@ http://digistump.com/package_digistump_index.json
 
 Now on to _Tools &#8594; Board &#8594; Boards Manager_. Look for and install `digistump AVR`
 
-## DigiSpark drivers
+## 3. DigiSpark drivers
 
 We should have everything we need installed now. I case things don't work as intended you can install the drivers from these links:
 
@@ -90,6 +90,7 @@ After that your Rubber Ducky is ready to be used.
 
 ## Instruction list
 
+```
 DELAY n &#8594; Waits n milliseconds
 
 STRING text &#8594; Presses corresponding keys to that text
@@ -99,10 +100,13 @@ GRI r &#8594; Presses windows key along with whatever other keys you want. Ej: W
 Fx 11 &#8594; Presses function keys. Ej: F11
 
 REPEAT n &#8594; Repeats the previous instruction n times
+````
 
 And here is a list of pretty self-explanatory instructions:
 
+```
 ENTER, SHIFT, ALT, CTRL, SPACE, ESC, TAB
+```
 
 You can also combine them, like if I wanted to do _Ctrl+Shift+Enter_ I'd wright _CTRL SHIFT ENTER_
 
